@@ -1,6 +1,3 @@
-### Instruction how to build VPC
-### Please copy paste below code
-```
 module "vpc" {
     source = "../"
     cidr_block      = "10.0.0.0/16"
@@ -17,11 +14,6 @@ module "vpc" {
     }    
 }
 
-```
-
-
-### To get the output, please add the following code
-```
 output vpc_id {
     value = module.vpc.vpc_id
 }
@@ -35,4 +27,3 @@ output public_subnet2 {
 output public_subnet3 {
     value = module.vpc.public_subnet3
 }
-```
