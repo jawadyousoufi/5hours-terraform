@@ -1,7 +1,5 @@
-### Instructions on how to create RDS instane
-### Please copy paste below code
-```
 module rds {
+    source = "../"
     region              = "us-east-1"
     allocated_storage   = 20
     engine              = "mysql"
@@ -17,11 +15,7 @@ module rds {
     Name = "main"
     }  
 }
-```
 
-### If you need the outputs:
-```
 output endpoint {
     value = module.rds.endpoint
 }
-```

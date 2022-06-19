@@ -26,4 +26,6 @@ resource "aws_db_instance" "default" {
   publicly_accessible  = var.publicly_accessible
 }
 
-
+output endpoint {
+    value = aws_db_instance.default.address
+}
